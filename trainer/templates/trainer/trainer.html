@@ -150,6 +150,36 @@
   textarea {
     resize: none;
   }
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+  }
+  .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+  }
+  .card-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+  }
+  .container {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -191,64 +221,25 @@
   <h3>FEEL FIT</h3>
   <p><em>Мы любим спорт!</em></p>
   <p>Тренажер Feel Fit укрепляет и подтягивает: мышцы тазового дна, ягодичные мышцы и внутреннюю часть бедер</p>
+  <img src="{{MEDIA_URL}}media/main.png"  style="width:100%"/>
   <br>
   <div class="row">
     <div class="col-sm-4">
       <p class="text-center"><strong>Разработан в США</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo" class="collapse">
-        <p>Guitarist and Lead Vocalist</p>
-        <p>Loves long walks on the beach</p>
-        <p>Member since 1988</p>
-      </div>
     </div>
     <div class="col-sm-4">
       <p class="text-center"><strong>Cделан из мягкого каучука и карбоновых стальных пластин</strong></p><br>
-      <a href="#demo2" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo2" class="collapse">
-        <p>Drummer</p>
-        <p>Loves drummin'</p>
-        <p>Member since 1988</p>
-      </div>
     </div>
     <div class="col-sm-4">
       <p class="text-center"><strong>Регулируемая нагрузка </strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
     </div>
   </div>
   <div class="row">
       <div class="col-sm-6">
         <p class="text-center"><strong>Наличный и безналичный расчет</strong></p><br>
-        <a href="#demo" data-toggle="collapse">
-          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-        </a>
-        <div id="demo" class="collapse">
-          <p>Guitarist and Lead Vocalist</p>
-          <p>Loves long walks on the beach</p>
-          <p>Member since 1988</p>
-        </div>
       </div>
       <div class="col-sm-6">
         <p class="text-center"><strong>Доставка во все города России </strong></p><br>
-        <a href="#demo2" data-toggle="collapse">
-          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-        </a>
-        <div id="demo2" class="collapse">
-          <p>Drummer</p>
-          <p>Loves drummin'</p>
-          <p>Member since 1988</p>
-        </div>
       </div>
     </div>
 </div>
@@ -257,33 +248,18 @@
 <div id="product" class="container">
   <h3 class="text-center">О продукте</h3>  
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Действие</a></li>
-    <li><a data-toggle="tab" href="#menu1">Актуальность</a></li>
-    <li><a data-toggle="tab" href="#menu2">Эксперты</a></li>
+    <li class="active"><a data-toggle="tab" href="#home">Актуальность</a></li>
+    <li><a data-toggle="tab" href="#menu1">Мнение</a></li>
   </ul>
 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
-      <h2>Ягодицы</h2>
-      <p>Придает рельефность ягодицам</p>
-      <p>Укрепляет ягодичные мышцы</p>
-      <h2>Тазовое дно</h2>
-      <p>Устраняет растяжение мышц влагалища после родов</p>
-      <p>Повышает тонус мышц тазового дна</p>
-      <p>Улучшает сексуальную жизнь</p>
-      <p>Предотвращает опущение матки</p>
-      <h2>Внутренняя часть бедра</h2>
-      <p>Сжигает жировые отложения</p>
-      <p>Уменьшает объём</p>
-      <p>Подтягивает кожу</p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
       <h2>Кому приобретение тренажера особенно необходимо?</h2>
       <p>- девушкам, следящим за своим здоровьем и фигурой</p>
       <p>- при подготовке к беременности</p>
       <p>- при восстановлении после беременности и родов </p>
     </div>
-    <div id="menu2" class="tab-pane fade">
+    <div id="menu1" class="tab-pane fade">
       <h2>Мнение экспертов</h2>
       <p>Каждая третья пациентка приходит на прием в нашу клинику с такими проблемами, как недержание мочи, опущение матки 1 и 2 степени и слабость мышц. </p>
       <p>К сожалению, статистика показывает, что подобные проблемы встречаются у 80 % будущих мам и с каждым годом эта цифра растет. Более того, от состояния мышц тазового дна зависит насколько легко и быстро пройдут роды и насколько быстро мышцы придут в нужную форму после. </p>
@@ -295,14 +271,59 @@
   </div>
 </div>
 
+<div class="myrow" style="box-sizing: border-box;">
+  <h3 class="text-center">Действие</h3>  
+    <div class="col-md-4 mb-5">
+      <div class="card h-100" style="margin-bottom:25px;">
+        <div class="card-body">
+          <h2 class="card-title">Ягодицы</h2>
+          <p class="card-text">Придает рельефность ягодицам</p>
+          <p class="card-text">Укрепляет ягодичные мышцы</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn btn-primary btn-sm">More Info</a>
+        </div>
+      </div>
+    </div>
+    <!-- /.col-md-4 -->
+    <div class="col-md-4 mb-5">
+      <div class="card h-100" style="margin-bottom:25px;">
+        <div class="card-body">
+          <h2 class="card-title">Тазовое дно</h2>
+          <p class="card-text">Устраняет растяжение мышц влагалища после родов</p>
+          <p class="card-text">Повышает тонус мышц тазового дна</p>
+          <p class="card-text">Улучшает сексуальную жизнь</p>
+          <p class="card-text">Предотвращает опущение матки</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn btn-primary btn-sm">More Info</a>
+        </div>
+      </div>
+    </div>
+    <!-- /.col-md-4 -->
+    <div class="col-md-4 mb-5">
+      <div class="card h-100" style="margin-bottom:25px;">
+        <div class="card-body">
+          <h2 class="card-title">Внутренняя часть бедра</h2>
+          <p class="card-text">Сжигает жировые отложения</p>
+          <p class="card-text">Уменьшает объём</p>
+          <p class="card-text">Подтягивает кожу</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn btn-primary btn-sm">More Info</a>
+        </div>
+      </div>
+    </div>
+    <!-- /.col-md-4 -->
+
+  </div>
+
 <div id="training" class="container">
   <h3 class="text-center">Упражнения</h3>  
   <div class="row">
       <div class="col-sm-4">
         <p class="text-center"><strong>Базовое упражнение</strong></p><br>
-        <a href="#demo" data-toggle="collapse">
-          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-        </a>
+        <img src="{{MEDIA_URL}}media/train_01_01.jpeg" class="img-circle person" width="255" height="255" style="width:100%;"/>
         <div id="demo">
           <p>Займите исходное положение стоя: пятки вместе, носки врозь</p>
           <p>Далее следуйте примеру с рисунка, разместите тренажер на 3-6 см ниже мышц тазового дна</p>
@@ -313,9 +334,7 @@
       </div>
       <div class="col-sm-4">
         <p class="text-center"><strong>Упражнение в положении лежа на спине</strong></p><br>
-        <a href="#demo2" data-toggle="collapse">
-          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-        </a>
+        <img src="{{MEDIA_URL}}media/train_02.jpg" class="img-circle person" style="width:100%;"/>
         <div id="demo2">
           <p>Разместите тренажер аналогично базовому упражнению </p>
           <p>Примите положение лежа на спине </p>
@@ -324,9 +343,7 @@
       </div>
       <div class="col-sm-4">
         <p class="text-center"><strong>Упражнение в упоре лежа</strong></p><br>
-        <a href="#demo3" data-toggle="collapse">
-          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-        </a>
+        <img src="{{MEDIA_URL}}media/train_03.jpg" class="img-circle person" style="width:100%;"/>
         <div id="demo3">
           <p>Разместите тренажер аналогично базовому упражнению</p>
           <p>Примите положение лежа с упором на локти, сохраняйте корпус параллельно полу, повторяйте действия базового упражнения </p>
